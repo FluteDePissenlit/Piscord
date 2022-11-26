@@ -185,7 +185,7 @@
                 
             .leftbar .channels-list .categorie .categorie-name .name {
                 color: var(--main-text-color);
-                font-size: 11px;
+                font-size: 12px;
                 font-weight: 700;
                 letter-spacing: 0.5px;
                 text-transform: uppercase;
@@ -213,7 +213,7 @@
                     background: var(--main-text-color);
                     pointer-events: none;
                 }
-                .leftbar .channels-list .categorie .categorie-name:hover .cross .bar {
+                .leftbar .channels-list .categorie .categorie-name .cross:hover .bar {
                     background: var(--title-text-color);
                 }
                 .leftbar .channels-list .categorie .categorie-name .cross .bar:nth-child(2) {
@@ -250,7 +250,7 @@
                 }
                 .leftbar .channels-list .categorie .channel .name {
                     color: var(--main-text-color);
-                    font-size: 15px;
+                    font-size: 14px;
                     font-weight: 600;
                     margin: auto 0 auto 0;
                     padding-left: 5px;
