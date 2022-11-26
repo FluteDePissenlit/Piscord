@@ -65,7 +65,7 @@
                 border-radius: 1.5px;
                 background: var(--title-text-color);
                 pointer-events: none;
-                transition: all 0.3s ease-out;
+                transition: all 0.1s ease-out;
             }
             .leftbar .server-banner .arrow .bar:nth-child(1) {
                 transform: rotate(45deg);
@@ -165,7 +165,7 @@
                     height: 1px;
                     background: var(--main-text-color);
                     pointer-events: none;
-                    transition: all 0.3s ease-out;
+                    transition: all 0.1s ease-out;
                 }
                 .leftbar .channels-list .categorie .categorie-name:hover .arrow .bar {
                     background: var(--title-text-color);

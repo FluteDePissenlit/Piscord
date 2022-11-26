@@ -7,10 +7,11 @@ serverBanner.addEventListener("click", e => {
 
 
 
+const categorieName1 = document.querySelector(".categorie-name1")
 const categorie1 = document.querySelector(".categorie1")
 
 
 
-categorie1.addEventListener("click", e => {
+categorieName1.addEventListener("click", e => {
     categorie1.classList.toggle("open");
 });
