@@ -1,0 +1,148 @@
+*{
+    --middle-background-color: rgb(54, 57, 63);
+    --rightleft-background-color: rgb(47, 49, 54);
+    --sidebar-background-color: rgb(32, 34, 37);
+    --user-background-color: rgb(41, 43, 47);
+
+    --champs-background-color: rgb(64, 68, 75);
+    --channelselect-background-color: rgb(64, 68, 75);
+    --scrollbar-color: rgb(32,34,37);
+    --separation-background-color: rgb(62, 66, 72);
+
+    --title-text-color: rgb(255, 255, 255);
+    --main-text-color: rgb(150, 152, 157);
+    --icon-color-g: rgb(59, 165, 93);
+    --icon-color-b: rgb(88,101,242);
+}
+
+.sidebar {
+    position: sticky;
+    left: 0;
+    width: min-content;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: separation-between;
+    overflow: hidden;
+    padding: 12px;
+    background: var(--sidebar-background-color);
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+.sidebar::-webkit-scrollbar {
+    width: 0px;
+}
+    .sidebar .button {
+        width: 48px;
+        height: 48px;
+        min-height: 48px;
+        border-radius: 50%;
+        margin-bottom: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--rightleft-background-color);
+        cursor: pointer;
+        transition: border-radius 0.15s ease-out;
+    }
+    .sidebar .button:hover {
+        border-radius: 35%;
+        background: var(--icon-color-g);
+    }
+    .sidebar .button.private-messages:hover {
+        border-radius: 35%;
+        background: var(--icon-color-b);
+    }
+        .sidebar .button:hover .icon-g {
+            background-color: var(--title-text-color);
+        }
+
+    .sidebar .server-repersitory {
+        width: 48px;
+        min-height: 48px;
+        margin-bottom: 8px;
+        border-radius: 15px;
+        padding: 10%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        background: var(--rightleft-background-color);
+    }
+    .sidebar .server-repersitory.open {
+        height: auto;
+        display: block;
+        border-radius: 24px;
+        padding: 0;
+    }
+        .sidebar .server-repersitory .server{
+            min-width: 15px;
+            min-height: 15px;
+            margin: 2px;
+            border-radius: 50%;
+            background: var(--icon-color-g);
+        }
+        .sidebar .server-repersitory.open .server{
+            width: 48px;
+            height: 48px;
+            margin: 0 0 8px 0;
+            border-radius: 50%;
+            background: var(--icon-color-g);
+            transition: border-radius 0.15s ease-out;
+            cursor: pointer;
+        }
+        .sidebar .server-repersitory.open .server:hover{
+            border-radius: 35%;
+        }
+        
+
+        .sidebar .server-repersitory.open .last-server{
+            margin-bottom: 0;
+        }
+
+        .sidebar .server-repersitory .repersitory-button {
+            position: absolute;
+            width: 48px;
+            height: 48px;
+            border-radius: 15px;
+            background: rgba(0, 0, 0, 0);
+            cursor: pointer;
+        }
+        .sidebar .server-repersitory.open .repersitory-button {
+            position: relative;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: var(--rightleft-background-color);
+        }
+        .sidebar .server-repersitory.open .repersitory-button:hover {
+            background: var(--middle-background-color);
+        }
+            .sidebar .server-repersitory .repersitory-button .icon-w{
+                display: none;
+            }
+            .sidebar .server-repersitory.open .repersitory-button .icon-w{
+                display: block;
+            }
+
+    .sidebar .separation{
+        width: 32px;
+        height: 2px;
+        min-height: 3px;
+        border-radius: 1px;
+        margin-bottom: 8px;
+        background: var(--rightleft-background-color);
+    }
+        .sidebar .icon-w {
+            width: 20px;
+            height: 20px;
+            border-radius: 5px;
+            background: var(--title-text-color);
+        }
+        .sidebar .icon-g {
+            width: 20px;
+            height: 20px;
+            border-radius: 5px;
+            background: var(--icon-color-g);
+        }
